@@ -1,0 +1,214 @@
+
+/* Body and Links */
+
+body {
+	background-color: #1258DC;
+	color: #F7F4D4;
+}
+
+:link { color: #F7F4D4 }
+:visited { color: #ffff00;}
+:active { color: #ffffcc; }
+
+/*
+
+	#F7F4D4  (lighter)
+	#FDED2A  (Yellow)
+	#1258DC  (Blue)
+	#EA202C  (Red)
+	#091834  (darker)
+
+*/
+
+div.quote { margin: 0 auto; text-align: center; }
+span.quote2 { color: blue; text-align: center; width: 90%; }
+
+/* DIV.THISLINE Aligns Horizontally and Foldably */
+
+div.thisline {
+background-color: #091834;
+padding: 0.5em;
+display: inline-block; /* enable side by side */
+justify-content: center;
+
+/* Make space in case they wrap */
+margin-top: 0.5ex;
+margin-bottom: 0.5ex;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+max-width: 400px;
+vertical-align: text-top;
+}
+div.thisline>h1{font-size: 150%;}
+div.thisline>h2{
+  font-size: 110%;
+  font-weight: bold;
+  margin-top:5ex;
+  margin-bottom: 0.1ex;
+}
+
+/* DIFFERENT COLORS FOR THE THREE FOLDABLE COLUMNS */
+div#leftcol   { background-color: #091834; color: #F0F7D4; }
+div#middlecol { background-color: #091834; color: #F0F7D4; }
+div#rightcol  { background-color: #091834; color: #F0F7D4; }
+div#middlecol a :any-link {color: #F0F7D4; }
+
+/* A.THISLINE ALIGNS LINKS HORIZONTALLY AND FOLDABLY */
+a.thisline{
+  display: inline-block; /* enable side by side */
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.5ex;
+  margin-bottom: 0.5ex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  max-width: 350px;
+  vertical-align: text-bottom;
+}
+
+/* GIVE WIDER SPACING TO ALL LIST ITEMS */
+/* THIS ALLOWS PASSING OF */
+/* GOOGLE MOBILE FRIENDLY TEST */
+ol>li,ul>li{margin-bottom: 1em;}
+
+
+/* SPECIFY APPEARANCE OF BANNER */
+
+div#top_outer{
+  align-self: center;
+  background-color: #091834;
+  padding: 1.2em;
+  align-items: center;
+  text-align: center;
+}
+
+div#top_inner{
+  align-self: center;
+  background-color: #091834;
+  padding: 0em;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-width: 1.5em;
+  border-color: #1258DC;
+}
+
+span.banner2 {
+  margin: 12px 12px 12px 12px;
+  font-size: 15pt;
+  vertical-align: center;
+}
+
+p.banner2 {
+  text-align: center;
+  margin: 6px 4px 4px 4px;
+  font-size: 30pt;
+  vertical-align: center;
+  text-shadow: 2px 2px 6px yellow;
+}
+
+p.banner3 {
+  text-align: center;
+  margin: 6px 4px 4px 4px;
+  font-size: 20pt;
+  vertical-align: center;
+  text-shadow: 2px 2px 6px yellow;
+}
+
+/* SPAN.BREAK USED IN BANNER, ALLOWS kc4zvw.org TO LINE WRAP*/
+span.break{margin:0; margin-left:-0.15em; margin-right:-0.15em;}
+
+
+/* SPECIFY APPEARANCE OF TITLE AND SUBTITLE */
+p#title{
+  color: black;
+  text-align: center;
+  font-size: 220%;
+  font-weight:bold;
+}
+p#subtitle{
+  color: #EA202C;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+/* SPECIFY P.TITLE IN OTHER CONTEXTS */
+div.logos>p.title{text-align: center;}
+
+/* SPECIFY APPEARANCE OF WORD "CONTENTS" */
+/* NOTE THAT THE WIDE LETTER SPACING WAS DONE WITH ACTUAL SPACES */
+p.contents_title{
+  margin-top:3ex;
+  margin-bottom:0ex;
+  color: #EA202C;
+  font-size:110%;
+  font-weight: bold;
+}
+
+/* HORIZ RULE APPEARANCE. ALL WERE MADE THE SAME
+IF DIFFERENT HORIZ RULES BECOME ESSENTIAL, PUT
+CLASSES BELOW THE INITIAL HR LINE. */
+hr{color: #EA202C; height: 1px;}
+
+/* SPECIFY HOW BOTTOM ICONS LOOK AND ALIGN */
+div#logos{text-align:center; padding: 1em;}
+div#logos>div.spacer{
+  margin-left:auto;
+  margin-right:auto;
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: center;
+}
+
+/* SPECIFY APPEARANCE AND LAYOUT FOR FORM */
+form div{margin-top:1ex; margin-bottom:1ex;}
+
+p.contents_title{
+  margin-top:3ex;
+  margin-bottom:0ex;
+  font-size:110%;
+  font-weight: bold;
+}
+
+div#footer {
+  margin-left:auto;
+  margin-right:auto;
+  display: inline-block;
+}
+
+div.banner3 {
+  margin-left: 75px;
+  margin-right: 75px;
+  display: inline-block;
+}
+
+.container {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    /* background-color: #0a0a23; */
+}
+
+.container2 {
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.container img {
+    width: 80px;
+    margin: auto;
+    display: block;
+}
+
+/* End of file */
